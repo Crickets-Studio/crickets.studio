@@ -7,9 +7,14 @@ const Footer = () => {
       <div>
         <p>
           Source code licensed{" "}
-          <Link className="underline hover:no-underline" href="">
-            MIT.
+          <Link
+            className="underline hover:no-underline"
+            href="
+          https://github.com/Crickets-Studio/crickets.studio/blob/main/LICENCE"
+          >
+            MIT
           </Link>
+          .
         </p>
       </div>
     </footer>
