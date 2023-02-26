@@ -1,8 +1,13 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
+import BtnLink from "@/Buttons/BtnLink";
+import Layout from "@/components/Layout";
 import Hero from "@/pageComponents/index/Hero";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -13,7 +18,20 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero title="Crickets Studio" />
+        <Layout>
+          <Hero title="Crickets Studio">
+            <div className="btn-group">
+              <BtnLink onClick={() => router.push("/about")}>About Us</BtnLink>
+              <BtnLink
+                onClick={() =>
+                  router.replace("https://github.com/Crickets-Studio")
+                }
+              >
+                Github
+              </BtnLink>
+            </div>
+          </Hero>
+        </Layout>
       </main>
     </>
   );
