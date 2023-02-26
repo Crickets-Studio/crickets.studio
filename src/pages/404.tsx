@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import BtnLink from "@/Buttons/BtnLink";
+import Layout from "@/components/Layout";
 import Hero from "@/pageComponents/index/Hero";
 
 export default function Home() {
@@ -17,11 +18,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero title="404">
-          <div className="btn-group">
-            <BtnLink onClick={() => router.push("/")}>Home</BtnLink>
-          </div>
-        </Hero>
+        <Layout>
+          <Hero title="404">
+            <div className="btn-group">
+              <BtnLink onClick={() => router.push("/")}>Home</BtnLink>
+            </div>
+          </Hero>
+        </Layout>
       </main>
     </>
   );
