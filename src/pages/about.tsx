@@ -1,6 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticProps } from "next";
 import { useRouter } from "next/router";
 
 import BtnLink from "@/Buttons/BtnLink";
