@@ -18,20 +18,18 @@ export default function Home() {
       </Head>
 
       <main>
-        <Layout>
-          <Hero title="Crickets Studio">
-            <div className="btn-group">
-              <BtnLink onClick={() => router.push("/about")}>About Us</BtnLink>
-              <BtnLink
-                onClick={() =>
-                  router.replace("https://github.com/Crickets-Studio")
-                }
-              >
-                Github
-              </BtnLink>
-            </div>
-          </Hero>
-        </Layout>
+        <Hero title="Crickets Studio">
+          <div className="btn-group">
+            <BtnLink onClick={() => router.push("/about")}>About Us</BtnLink>
+            <BtnLink
+              onClick={() =>
+                router.replace("https://github.com/Crickets-Studio")
+              }
+            >
+              Github
+            </BtnLink>
+          </div>
+        </Hero>
       </main>
     </>
   );
