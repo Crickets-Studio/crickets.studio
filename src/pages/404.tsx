@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import BtnLink from "@/Buttons/BtnLink";
 import Layout from "@/components/Layout";
-import Hero from "@/pageComponents/index/Hero";
+import Hero from "@/components/Hero";
 
 export default function NotFound() {
   const router = useRouter();
